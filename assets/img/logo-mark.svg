@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="AstroOracle">
+  <defs>
+    <linearGradient id="ao-badge" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC94A"/>
+      <stop offset="0.55" stop-color="#FFB300"/>
+      <stop offset="1" stop-color="#EE8A00"/>
+    </linearGradient>
+    <linearGradient id="ao-star" x1="22" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF1CF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="17" fill="url(#ao-badge)"/>
+
+  <!-- North Indian kundli: a diamond inside the square, with the inner cross -->
+  <path d="M32 9.5 54.5 32 32 54.5 9.5 32Z" fill="#8C1D18" fill-opacity="0.13"
+        stroke="#FFF8EE" stroke-opacity="0.92" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M20.8 20.8 43.2 43.2M43.2 20.8 20.8 43.2" stroke="#FFF8EE" stroke-opacity="0.45"
+        stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- the guiding star at the centre of the chart -->
+  <path d="M32 19.6c1.5 7 4.9 10.4 11.9 11.9v1c-7 1.5-10.4 4.9-11.9 11.9h-1C29.6 37.4 26.2 34 19.2 32.5v-1c7-1.5 10.4-4.9 11.8-11.9Z"
+        fill="url(#ao-star)"/>
+  <circle cx="32" cy="14.2" r="1.7" fill="#FFF8EE" fill-opacity="0.85"/>
+  <circle cx="49.5" cy="32" r="1.4" fill="#FFF8EE" fill-opacity="0.7"/>
+  <circle cx="32" cy="49.6" r="1.7" fill="#FFF8EE" fill-opacity="0.85"/>
+  <circle cx="14.4" cy="32" r="1.4" fill="#FFF8EE" fill-opacity="0.7"/>
+</svg>
