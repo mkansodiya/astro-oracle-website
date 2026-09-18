@@ -1,13 +1,23 @@
 # AstroOracle — website
 
-Not built yet. This folder is the third repository: the public site.
+The public site: landing page, privacy policy and terms. Plain HTML and CSS, no build step —
+open `index.html`, or serve the folder:
 
-What it needs to carry before the app can be published:
+```bash
+python -m http.server 8090
+```
 
-- a landing page for the app (what it does, screenshots, download link);
-- the **privacy policy** and **terms** pages — Google Play requires a public privacy policy URL,
-  and the terms are where the payment, refund and guidance rules live;
-- a support / contact page (Play also asks for a support email or URL);
-- once payments go live, the domain Cashfree needs for the merchant account.
+| File | What it is |
+|---|---|
+| `index.html` | Landing page: hero, how it works, app screenshots, features, astrologers, pricing, FAQ |
+| `privacy.html` | Privacy policy — Google Play requires a public URL for this |
+| `terms.html` | Terms of use, including payments, refunds and what the app will never do |
+| `assets/css/styles.css` | The app's saffron palette |
+| `assets/img/screen-*.png` | Screenshots taken from the app, trimmed of the Android status bar |
 
-Stack is undecided; pick one before starting (static HTML, Astro or Next.js).
+Before launch, search the HTML for `TODO` and fill in: the legal entity name, registered address,
+grievance contact, GST treatment, and the support email (currently `hello@astrooracle.app`).
+Then have a lawyer read the privacy policy and terms.
+
+Deploying: any static host works. On GitHub Pages, enable Settings → Pages → Deploy from branch
+(`main`, `/`).
