@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Terms of use — AstroOracle</title>
 <meta name="description" content="The rules for using AstroOracle: what the service is, how questions and payments work, and what it will never do." />
-<link rel="icon" href="assets/img/favicon.svg" />
+<meta name="theme-color" content="#FFB300" />
+<link rel="icon" href="assets/img/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,16 +14,20 @@
 </head>
 <body>
 
-<header class="site-header">
+<nav class="nav stuck" id="nav">
   <div class="wrap">
-    <a class="brand" href="index.html">
-      <img src="assets/img/logo-mark.svg" alt="" width="38" height="38" />
-      <span>Astro<b>Oracle</b></span>
+    <a class="brand" href="index.html" aria-label="AstroOracle">
+      <img src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x"
+           alt="AstroOracle" width="166" height="34" />
     </a>
-    <nav class="nav"><a href="index.html">Home</a><a href="privacy.html">Privacy</a></nav>
-    <a class="btn btn--small" href="mailto:hello@astrooracle.app">Contact</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <a class="btn btn--primary btn--sm" href="index.html#get">Get early access</a>
   </div>
-</header>
+</nav>
 
 <main class="doc">
   <div class="wrap">
@@ -75,34 +80,35 @@
   </div>
 </main>
 
-<footer class="site-footer">
+<footer class="foot">
   <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="index.html">
-          <img src="assets/img/logo-mark.svg" alt="" width="38" height="38" />
-          <span>Astro<b>Oracle</b></span>
-        </a>
-        <p style="margin-top:14px;max-width:44ch">Vedic astrology guidance built on your own birth chart, in English and Hindi.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="index.html#how">How it works</a></li>
-          <li><a href="index.html#screens">Inside the app</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-          <li><a href="mailto:hello@astrooracle.app">Support</a></li>
-        </ul>
-      </div>
+    <div>
+      <a class="brand" href="index.html" aria-label="AstroOracle">
+        <img src="assets/img/logo-lockup.png" srcset="assets/img/logo-lockup.png 1x, assets/img/logo-lockup@2x.png 2x"
+             alt="AstroOracle — Vedic astrology, English and Hindi" width="196" height="45" />
+      </a>
+      <p style="margin-top:10px;max-width:40ch;font-size:0.92rem">Vedic astrology guidance built on your own birth chart, in English and Hindi.</p>
     </div>
-    <div class="footer-bottom">
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="index.html#how">How it works</a></li>
+        <li><a href="index.html#chart">Your chart</a></li>
+        <li><a href="index.html#inside">Inside the app</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="mailto:hello@astrooracle.app">Support</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot-note">
       <span>© 2026 AstroOracle</span>
       <span>Guidance for reflection, not medical, legal or financial advice. 18+ only.</span>
     </div>

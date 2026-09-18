@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AstroOracle — your Kundli, read the moment you ask</title>
-<meta name="description" content="Vedic astrology built on your own birth chart: the sidereal zodiac with the Lahiri ayanamsha, Vimshottari dasha and today's real transits, explained in English or Hindi. Three questions free." />
-<meta property="og:title" content="AstroOracle — your Kundli, read the moment you ask" />
-<meta property="og:description" content="Ask about marriage, career, timing and remedies. Every answer is built from your own chart, at any hour." />
+<title>AstroOracle — ask your chart, not a horoscope</title>
+<meta name="description" content="Ask a question and AstroOracle reads your own Kundli, the dasha you are running and today's transits to answer it — in English or Hindi. Three questions free." />
+<meta property="og:title" content="AstroOracle — ask your chart, not a horoscope" />
+<meta property="og:description" content="Your Kundli, your dasha, today's transits — and an answer to the question you actually asked." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="assets/img/logo-mark-512.png" />
+<meta property="og:image" content="assets/img/icon-512.png" />
 <meta name="theme-color" content="#FFB300" />
-<link rel="icon" href="assets/img/favicon.svg" />
-<link rel="apple-touch-icon" href="assets/img/logo-mark-512.png" />
+<link rel="icon" href="assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="assets/img/icon-512.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,257 +19,194 @@
 </head>
 <body>
 
-<header class="site-header">
+<nav class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="./">
-      <img src="assets/img/logo-mark.svg" alt="" width="38" height="38" />
-      <span>Astro<b>Oracle</b></span>
+    <a class="brand" href="./" aria-label="AstroOracle">
+      <img src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x"
+           alt="AstroOracle" width="166" height="34" />
     </a>
-    <nav class="nav">
+    <div class="nav-links">
       <a href="#how">How it works</a>
-      <a href="#screens">Inside the app</a>
-      <a href="#astrologers">Astrologers</a>
+      <a href="#chart">Your chart</a>
+      <a href="#timing">Timing</a>
       <a href="#ask">What to ask</a>
+      <a href="#inside">Inside the app</a>
       <a href="#faq">FAQ</a>
-    </nav>
-    <a class="btn btn--small" href="#get">Get early access</a>
+    </div>
+    <a class="btn btn--primary btn--sm" href="#get">Get early access</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="hero-badge"><i></i> Vedic astrology · English + हिंदी</span>
+      <h1>Ask your chart,<br /><em>not a horoscope.</em></h1>
+      <p class="lead">Type the question you keep turning over. AstroOracle reads your own Kundli, the dasha you are running and today's transits — then answers it, in your language.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#get">Get early access</a>
+        <a class="btn btn--quiet" href="#how">See how it works</a>
+      </div>
+      <div class="hero-meta">
+        <span><b>3 questions free</b></span><i></i>
+        <span>answers in <b>seconds</b></span><i></i>
+        <span>no appointment, no queue</span>
+      </div>
+    </div>
+
+    <div class="compo">
+      <div class="phone phone--clip">
+        <img src="assets/img/screen-home.webp" width="560" height="1180" fetchpriority="high"
+             alt="The AstroOracle home screen: free questions, astrologers online and shortcuts to the Kundli, chats and transits." />
+      </div>
+
+      <figure class="pop pop--answer">
+        <figcaption class="pop-label"><i></i> The answer</figcaption>
+        <img src="assets/img/detail-answer.webp" width="700" height="561" loading="lazy" alt="Part of an answer: Jupiter's dasha and transit dates, written in Hinglish." />
+      </figure>
+
+      <figure class="pop pop--dasha">
+        <figcaption class="pop-label"><i></i> Dasha you're running</figcaption>
+        <img src="assets/img/detail-dasha.webp" width="700" height="316" loading="lazy" alt="Vimshottari dasha timeline with the current period highlighted." />
+      </figure>
+
+      <figure class="pop pop--transit">
+        <figcaption class="pop-label"><i></i> Coming up</figcaption>
+        <img src="assets/img/detail-transit.webp" width="700" height="194" loading="lazy" alt="Transit alert: Jupiter enters Leo on 31 October 2026, your 3rd house." />
+      </figure>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-sky"></div>
-  <svg class="hero-stars" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true">
-    <g fill="#D98500">
-      <circle cx="90" cy="120" r="2.2" opacity=".55"/><circle cx="220" cy="60" r="1.6" opacity=".4"/>
-      <circle cx="340" cy="180" r="2" opacity=".35"/><circle cx="520" cy="80" r="1.8" opacity=".45"/>
-      <circle cx="700" cy="150" r="2.4" opacity=".4"/><circle cx="860" cy="70" r="1.7" opacity=".5"/>
-      <circle cx="1010" cy="200" r="2.1" opacity=".38"/><circle cx="1140" cy="110" r="1.6" opacity=".45"/>
-      <circle cx="160" cy="330" r="1.8" opacity=".3"/><circle cx="430" cy="420" r="1.5" opacity=".3"/>
-      <circle cx="960" cy="400" r="2" opacity=".3"/><circle cx="1120" cy="520" r="1.6" opacity=".28"/>
-      <circle cx="60" cy="560" r="2" opacity=".26"/><circle cx="300" cy="620" r="1.5" opacity=".24"/>
-    </g>
-    <g stroke="#D98500" stroke-opacity=".28" stroke-width="1" fill="none">
-      <path d="M90 120 220 60 340 180 520 80"/>
-      <path d="M700 150 860 70 1010 200 1140 110"/>
-    </g>
-  </svg>
-
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">Vedic astrology · English &amp; हिन्दी</span>
-      <h1>Your Kundli, read <span>the moment</span> you ask.</h1>
-      <p class="lead">Marriage, career, money, timing — ask anything and get an answer built from your own birth chart: the sidereal zodiac, the dasha you are running, and today's real transits. No appointment, no waiting room, no hurry.</p>
-      <div class="btn-row" style="margin-top:28px">
-        <a class="btn" href="#get">Get early access</a>
-        <a class="btn btn--ghost" href="#screens">See the app</a>
-      </div>
-      <div class="hero-proof">
-        <span><b>3 questions free</b></span><span class="dot-sep"></span>
-        <span>English &amp; <b>हिन्दी</b></span><span class="dot-sep"></span>
-        <span>answers in <b>seconds</b></span>
-      </div>
-    </div>
-
-    <div class="stage">
-      <svg class="stage-wheel" viewBox="0 0 400 400" aria-hidden="true">
-        <circle cx="200" cy="200" r="186" fill="none" stroke="#D98500" stroke-opacity=".25" stroke-width="1.2"/>
-        <circle cx="200" cy="200" r="152" fill="none" stroke="#D98500" stroke-opacity=".18" stroke-width="1"/>
-        <g stroke="#D98500" stroke-opacity=".18" stroke-width="1">
-          <path d="M200 14v372M14 200h372"/>
-          <path d="M69 69l262 262M331 69L69 331"/>
-          <path d="M107 27l186 346M27 107l346 186M293 27L107 373M373 107L27 293"/>
-        </g>
-      </svg>
-
-      <div class="phone phone--hero">
-        <img src="assets/img/screen-chat.png" width="560" height="1180" alt="An answer in the app: dasha periods, transit dates in bold, and a free remedy at the end." />
-      </div>
-
-      <span class="chip chip--1"><i></i> Vimshottari dasha</span>
-      <span class="chip chip--2"><i></i> Sade Sati windows</span>
-      <span class="chip chip--3"><i></i> D9 Navamsa</span>
-      <span class="chip chip--4 chip--green"><i></i> Online now</span>
-    </div>
+<div class="wrap">
+  <div class="strip reveal">
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> <b>Vimshottari</b> dasha to the second</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><ellipse cx="12" cy="12" rx="10" ry="4.4" transform="rotate(-25 12 12)"/></svg> <b>Lahiri</b> sidereal zodiac</span>
+    <span><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg> <b>D9 &amp; D10</b> divisional charts</span>
+    <span><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2.2-2.6A8 8 0 1 1 21 12Z"/></svg> English, Hindi &amp; <b>Hinglish</b></span>
   </div>
-</section>
+</div>
 
-<section class="section" id="how" style="padding-top:20px">
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">How it works</span>
-      <h2>Three steps, about a minute</h2>
-      <p class="lead">Your chart is cast once. Every answer after that stands on it.</p>
-    </div>
-    <div class="grid grid--3 steps reveal">
-      <div class="card">
-        <h3>Give your birth details</h3>
-        <p>Date, place and time of birth. Don't know the time? The reading is cast from your Moon sign and says so plainly, instead of quietly guessing.</p>
+    <div class="split split--wide-left">
+      <div>
+        <span class="kicker">How it works</span>
+        <h2>Three steps, about a minute</h2>
+        <p class="lead" style="margin-bottom:22px">Your chart is cast once. Every answer after that stands on it.</p>
+
+        <div class="claim reveal">
+          <div class="mini">
+            <div class="mini-num">01</div>
+            <div>
+              <h3>Give your birth details</h3>
+              <p>Date, place and time. Don't know the time? The reading is cast from your Moon sign and says so, instead of quietly guessing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="claim reveal d1">
+          <div class="mini">
+            <div class="mini-num">02</div>
+            <div>
+              <h3>Pick an astrologer and ask</h3>
+              <p>Marriage, career, money, timing, remedies — write it the way you'd say it, in English, Hindi or Hinglish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="claim reveal d2">
+          <div class="mini">
+            <div class="mini-num">03</div>
+            <div>
+              <h3>Get an answer with its reasons</h3>
+              <p>Not a verdict: the placements it rests on, the period you're in, and the dates ahead that matter.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Pick an astrologer</h3>
-        <p>Each one reads a different corner of life — marriage, career, dashas, remedies, family. The same calculations, seen through different eyes.</p>
-      </div>
-      <div class="card">
-        <h3>Ask anything</h3>
-        <p>Type in English, Hindi or Hinglish. The reply starts in a second or two, with the chart reasons written out, not just a verdict.</p>
+
+      <div class="collage reveal" style="justify-content:flex-start">
+        <figure>
+          <div class="phone"><img src="assets/img/screen-ask.webp" width="560" height="1180" loading="lazy" alt="A fresh chat with suggested questions about promotion, business and moving abroad." /></div>
+          <figcaption>Ask in your own words</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img src="assets/img/screen-chat.webp" width="560" height="1180" loading="lazy" alt="The astrologer's answer with dasha periods and transit dates in bold." /></div>
+          <figcaption>Reasons, not verdicts</figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section soft" id="screens">
+<!-- YOUR CHART -->
+<section class="section soft" id="chart">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Inside the app</span>
-      <h2>Built the way a Jyotishi works</h2>
-      <p class="lead">Real calculations, plain language, and nothing invented about you.</p>
-    </div>
-    <div class="gallery reveal">
-      <figure>
-        <div class="phone"><img src="assets/img/screen-home.png" width="560" height="1180" alt="Home screen: free questions, astrologers and shortcuts to Kundli, chats and wallet." /></div>
-        <figcaption>Everything one tap away</figcaption>
-      </figure>
-      <figure>
-        <div class="phone"><img src="assets/img/screen-astrologers.png" width="560" height="1180" alt="The astrologer list with subjects, languages and how many answers each has given." /></div>
-        <figcaption>Choose who reads your chart</figcaption>
-      </figure>
-      <figure>
-        <div class="phone"><img src="assets/img/screen-chat.png" width="560" height="1180" alt="An answer quoting dasha periods and transit dates, ending with a free remedy." /></div>
-        <figcaption>Answers with their reasons</figcaption>
-      </figure>
-      <figure>
-        <div class="phone"><img src="assets/img/screen-ask.png" width="560" height="1180" alt="A fresh chat with suggested questions about promotion, business and moving abroad." /></div>
-        <figcaption>Sample questions to start</figcaption>
-      </figure>
-      <figure>
-        <div class="phone"><img src="assets/img/screen-kundli.png" width="560" height="1180" alt="The Kundli screen: North Indian chart with Rasi and Navamsa tabs and a planet table." /></div>
-        <figcaption>Your full Kundli</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+    <div class="split">
+      <div class="reveal" style="display:flex;justify-content:center">
+        <div class="phone phone--clip" style="width:286px;height:496px">
+          <img src="assets/img/screen-dasha.webp" width="560" height="1180" loading="lazy" alt="The Kundli screen: planet table with signs, nakshatras, houses and dignities, and the Vimshottari dasha timeline." />
+        </div>
+      </div>
+      <div>
+        <span class="kicker">Your chart, your context</span>
+        <h2>A horoscope is written for a twelfth of the world. This isn't.</h2>
+        <p class="lead" style="margin-bottom:20px">Everything an astrologer would look up before answering is already on screen — and already in the answer.</p>
 
-<section class="section">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Why it's different</span>
-      <h2>Not a generic horoscope</h2>
-      <p class="lead">Sun-sign predictions are written for a twelfth of the world. Yours is written for your chart.</p>
-    </div>
-
-    <div class="versus reveal">
-      <div class="card card--dim">
-        <h3 style="color:var(--faint)">A free horoscope app</h3>
-        <ul>
-          <li>Same paragraph for everyone born in your month</li>
-          <li>"Lucky colour: yellow" and little else</li>
-          <li>No dasha, no transits, no houses</li>
-          <li>Pushes a ₹5,000 gemstone within two screens</li>
-        </ul>
-      </div>
-      <div class="versus-or">VS</div>
-      <div class="card card--win">
-        <h3>AstroOracle</h3>
-        <ul>
-          <li>Cast from your date, time and place of birth</li>
-          <li>Your Lagna, Moon nakshatra and running dasha named in the answer</li>
-          <li>Real transits for today, with Sade Sati windows</li>
-          <li>A free remedy first, gemstones only where the chart supports them</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid grid--3 reveal" style="margin-top:34px">
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><ellipse cx="12" cy="12" rx="10.5" ry="4.5" transform="rotate(-25 12 12)"/></svg></div>
-        <h3>Calculated the traditional way</h3>
-        <p>The sidereal zodiac with the Lahiri ayanamsha, Navamsa (D9) and Dashamsha (D10), Vimshottari dasha and antardasha to the second, and today's real transits.</p>
-      </div>
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M5 4h11l4 4v12H5z"/><path d="M15 4v5h5"/><path d="M9 12h6M9 16h4"/></svg></div>
-        <h3>Classical rules, not guesswork</h3>
-        <p>Dignities, house lords, aspects and yogas follow the Parashari rules a Jyotishi studies for years — and every answer names the factors it rests on.</p>
-      </div>
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3>Timing you can plan around</h3>
-        <p>Periods and seasons tied to your running dasha and the transits ahead. Never a lucky day pulled out of the air.</p>
-      </div>
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3c2.5 3 4 5.2 4 7.5a4 4 0 0 1-8 0C8 8.2 9.5 6 12 3Z"/><path d="M6 20h12"/></svg></div>
-        <h3>Remedies that start free</h3>
-        <p>A mantra, a fast, an act of service first. Gemstones only where the chart supports them, always with the advice to confirm before buying.</p>
-      </div>
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2.2-2.6A8 8 0 1 1 21 12Z"/><path d="M9 11h6M9 14h4"/></svg></div>
-        <h3>Your own language</h3>
-        <p>Write in English, Hindi or Hinglish — the answer comes back the same way, with Jyotish terms explained the first time they appear.</p>
-      </div>
-      <div class="card">
-        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.6 12 20 12 20Z"/></svg></div>
-        <h3>Guidance that treats you kindly</h3>
-        <p>No death predictions, no fear used to push a decision, no diagnosis. A hard period is named gently, along with what helps.</p>
+        <div class="claim">
+          <svg viewBox="0 0 24 24"><path d="M12 3 21 12l-9 9-9-9z"/><path d="M12 8.5 15.5 12 12 15.5 8.5 12z"/></svg>
+          <div><h3>Rasi and Navamsa, North or South Indian</h3><p>The chart drawn the way you're used to reading it, D1 and D9 side by side.</p></div>
+        </div>
+        <div class="claim">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="1.6"/><circle cx="15" cy="12" r="1.6"/><circle cx="11" cy="18" r="1.6"/></svg>
+          <div><h3>Every placement, with its dignity</h3><p>Sign, degree, nakshatra, house and whether a planet is exalted, debilitated, combust or retrograde.</p></div>
+        </div>
+        <div class="claim">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3>Your Vimshottari dasha, mapped out</h3><p>The mahadasha you're in and the ones ahead, with the current period marked.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section band" id="astrologers">
+<!-- TIMING -->
+<section class="section" id="timing">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">The astrologers</span>
-      <h2>A different pair of eyes for every question</h2>
-      <p class="lead">Every astrologer in AstroOracle is our AI, reading the chart our engine casts from your birth details — awake at any hour, with no queue and no rush. More join as we grow.</p>
-    </div>
-    <div class="people reveal">
-      <div class="card person">
-        <img src="assets/img/astrologer-meera.png" width="104" height="104" alt="" />
-        <div class="role">Love &amp; marriage</div>
-        <h3>Meera Iyer</h3>
-        <p>Timing, compatibility, family expectations, and the doshas people worry about.</p>
+    <div class="split split--wide-left">
+      <div>
+        <span class="kicker">Timing</span>
+        <h2>Not just what — <em class="serif" style="color:var(--saffron-deep);font-style:normal">when</em>.</h2>
+        <p class="lead" style="margin-bottom:20px">Most apps stop at "good things are coming". AstroOracle names the period, the planet and the date, straight from your chart.</p>
+
+        <div class="shot shot--detail reveal" style="max-width:440px;margin-bottom:14px">
+          <img src="assets/img/detail-transit.webp" width="700" height="194" loading="lazy" alt="Transit alert: Jupiter enters Leo on 31 October 2026, your 3rd house, in 43 days." />
+        </div>
+        <div class="shot shot--detail reveal d1" style="max-width:440px">
+          <img src="assets/img/detail-answer.webp" width="700" height="561" loading="lazy" alt="Part of an answer: Jupiter's transit dates and what they support, written in Hinglish." />
+        </div>
+        <p style="margin-top:14px;font-size:0.9rem;color:var(--faint)">Real screens from the app. Dates come from your own chart, never from a generic calendar.</p>
       </div>
-      <div class="card person">
-        <img src="assets/img/astrologer-arjun.png" width="104" height="104" alt="" />
-        <div class="role">Career &amp; business</div>
-        <h3>Arjun Mehta</h3>
-        <p>Job changes, promotions, government service, business versus salary, going abroad.</p>
-      </div>
-      <div class="card person">
-        <img src="assets/img/astrologer-rudra.png" width="104" height="104" alt="" />
-        <div class="role">Dasha &amp; Sade Sati</div>
-        <h3>Rudra Joshi</h3>
-        <p>Which period you are running, what it favours, and when the weight lifts.</p>
-      </div>
-      <div class="card person">
-        <img src="assets/img/astrologer-devraj.png" width="104" height="104" alt="" />
-        <div class="role">Remedies</div>
-        <h3>Devraj Trivedi</h3>
-        <p>Mantras, charity, fasting and puja first; gemstones only when the chart supports them.</p>
-      </div>
-      <div class="card person">
-        <img src="assets/img/astrologer-ananya.png" width="104" height="104" alt="" />
-        <div class="role">Your whole Kundli</div>
-        <h3>Ananya Sen</h3>
-        <p>For anything that doesn't fit a box — a full reading of the chart as it stands today.</p>
-      </div>
-      <div class="card person person--more">
-        <div class="plus">+</div>
-        <div class="role">More joining</div>
-        <p>Education, children and family are already in the app, and the list keeps growing.</p>
+
+      <div class="reveal">
+        <div class="phone" style="width:260px;margin-inline:auto">
+          <img src="assets/img/screen-transits.webp" width="560" height="1180" loading="lazy" alt="Transit alerts screen listing upcoming dasha changes and planet ingresses with dates and house numbers." />
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="ask">
+<!-- WHAT TO ASK -->
+<section class="section soft" id="ask">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">What people ask</span>
+    <div class="head center">
+      <span class="kicker">What to ask</span>
       <h2>Bring the question you keep turning over</h2>
-      <p class="lead">Anything a Jyotishi would be asked, in the words you would use.</p>
+      <p class="lead">Anything you'd take to a Jyotishi — in the words you'd actually use.</p>
     </div>
     <div class="asks reveal">
-      <div class="ask-group">
+      <div class="ask">
         <h3>Marriage &amp; love</h3>
         <ul>
           <li>When will I get married?</li>
@@ -277,7 +214,7 @@
           <li>Am I Manglik, and how much does it matter?</li>
         </ul>
       </div>
-      <div class="ask-group">
+      <div class="ask">
         <h3>Career &amp; money</h3>
         <ul>
           <li>Should I change my job this year?</li>
@@ -285,7 +222,7 @@
           <li>Is there a yoga for settling abroad?</li>
         </ul>
       </div>
-      <div class="ask-group">
+      <div class="ask">
         <h3>Timing &amp; periods</h3>
         <ul>
           <li>Which dasha am I running, and what does it favour?</li>
@@ -293,25 +230,103 @@
           <li>Is this a good period to buy a home?</li>
         </ul>
       </div>
-      <div class="ask-group">
+      <div class="ask">
         <h3>Remedies &amp; family</h3>
         <ul>
-          <li>What can I do for a difficult period, without spending?</li>
+          <li>What helps in a difficult period, without spending?</li>
           <li>Does my chart support a gemstone at all?</li>
           <li>How will my child do in studies?</li>
         </ul>
       </div>
     </div>
-    <div class="center">
-      <span class="free-note">✦ Every account starts with 3 questions free</span>
+  </div>
+</section>
+
+<!-- ASTROLOGERS -->
+<section class="section band" id="astrologers">
+  <div class="wrap">
+    <div class="head center">
+      <span class="kicker">The astrologers</span>
+      <h2>A different pair of eyes for every question</h2>
+      <p class="lead">Every astrologer in AstroOracle is our AI, reading the chart our engine casts from your birth details — awake at any hour, with no queue. More join as we grow.</p>
+    </div>
+    <div class="people reveal">
+      <div class="person">
+        <img src="assets/img/astrologer-meera.webp" width="68" height="68" loading="lazy" alt="" />
+        <strong>Meera Iyer</strong><span>Love &amp; marriage</span>
+      </div>
+      <div class="person">
+        <img src="assets/img/astrologer-arjun.webp" width="68" height="68" loading="lazy" alt="" />
+        <strong>Arjun Mehta</strong><span>Career &amp; abroad</span>
+      </div>
+      <div class="person">
+        <img src="assets/img/astrologer-rudra.webp" width="68" height="68" loading="lazy" alt="" />
+        <strong>Rudra Joshi</strong><span>Dasha &amp; Sade Sati</span>
+      </div>
+      <div class="person">
+        <img src="assets/img/astrologer-devraj.webp" width="68" height="68" loading="lazy" alt="" />
+        <strong>Devraj Trivedi</strong><span>Remedies</span>
+      </div>
+      <div class="person">
+        <img src="assets/img/astrologer-ananya.webp" width="68" height="68" loading="lazy" alt="" />
+        <strong>Ananya Sen</strong><span>Whole Kundli</span>
+      </div>
+    </div>
+    <div class="cards cards--3 reveal" style="margin-top:22px">
+      <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+        <h3>Free remedies first</h3>
+        <p style="color:rgba(255,255,255,.76)">A mantra, a fast, an act of service — before anything you'd have to buy.</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+        <h3>Numbers you can check</h3>
+        <p style="color:rgba(255,255,255,.76)">Answers given, and how helpful readers found them once ten people have rated. Nothing inflated.</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)">
+        <h3>Kind by design</h3>
+        <p style="color:rgba(255,255,255,.76)">No death predictions, no fear to push a decision, no diagnosis. Hard periods named gently.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="faq" style="padding-top:20px">
+<!-- INSIDE THE APP -->
+<section class="section" id="inside">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">FAQ</span>
+    <div class="head center">
+      <span class="kicker">Inside the app</span>
+      <h2>Built the way a Jyotishi works</h2>
+      <p class="lead">Five screens, no mock-ups: this is the app.</p>
+    </div>
+    <div class="collage reveal">
+      <figure>
+        <div class="phone"><img src="assets/img/screen-home.webp" width="560" height="1180" loading="lazy" alt="Home screen with free questions, astrologers and shortcuts." /></div>
+        <figcaption>Home</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="assets/img/screen-astrologers.webp" width="560" height="1180" loading="lazy" alt="Astrologer list with subjects, languages and answers given." /></div>
+        <figcaption>Astrologers</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="assets/img/screen-chat.webp" width="560" height="1180" loading="lazy" alt="An answer with dasha periods, transit dates and a free remedy." /></div>
+        <figcaption>The answer</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="assets/img/screen-kundli.webp" width="560" height="1180" loading="lazy" alt="North Indian chart with Rasi and Navamsa tabs." /></div>
+        <figcaption>Kundli</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="assets/img/screen-transits.webp" width="560" height="1180" loading="lazy" alt="Transit alerts with dates and houses." /></div>
+        <figcaption>Transit alerts</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--tight" id="faq">
+  <div class="wrap">
+    <div class="head center">
+      <span class="kicker">FAQ</span>
       <h2>Questions people ask first</h2>
     </div>
     <div class="faq">
@@ -321,7 +336,7 @@
       </details>
       <details>
         <summary>I don't know my exact birth time. Can I still use it?</summary>
-        <p>Yes. The reading is then cast from your Moon sign, houses are counted from there, and every answer says so rather than pretending to a precision it doesn't have.</p>
+        <p>Yes. The reading is cast from your Moon sign, houses are counted from there, and every answer says so rather than claiming a precision it doesn't have.</p>
       </details>
       <details>
         <summary>Which system of astrology is this?</summary>
@@ -343,48 +358,49 @@
   </div>
 </section>
 
-<section class="section" id="get" style="padding-top:0">
+<!-- FINAL CTA -->
+<section class="section section--tight" id="get">
   <div class="wrap">
-    <div class="cta-panel reveal">
-      <span class="eyebrow" style="background:rgba(255,255,255,.55);border-color:rgba(255,255,255,.6)">Android</span>
-      <h2>Coming soon to Google Play</h2>
-      <p class="lead" style="margin-inline:auto">The app is in testing. Write to us and we'll send the link the day it opens, along with your three free questions.</p>
-      <div class="btn-row" style="margin-top:24px">
-        <a class="btn btn--light" href="mailto:hello@astrooracle.app?subject=AstroOracle%20early%20access">Ask for early access</a>
+    <div class="final reveal">
+      <img src="assets/img/emblem.webp" alt="" width="52" height="52" loading="lazy" />
+      <h2>Be among the first to use AstroOracle</h2>
+      <p class="lead" style="margin-inline:auto">The Android app is in testing. Write to us and we'll send the link the day it opens, with your three free questions.</p>
+      <div class="btn-row" style="justify-content:center;margin-top:18px">
+        <a class="btn btn--light" href="mailto:hello@astrooracle.app?subject=AstroOracle%20early%20access">Get early access</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
+<footer class="foot">
   <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="./">
-          <img src="assets/img/logo-mark.svg" alt="" width="38" height="38" />
-          <span>Astro<b>Oracle</b></span>
-        </a>
-        <p style="margin-top:14px;max-width:44ch">Vedic astrology guidance built on your own birth chart, in English and Hindi.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#screens">Inside the app</a></li>
-          <li><a href="#ask">What to ask</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-          <li><a href="mailto:hello@astrooracle.app">Support</a></li>
-        </ul>
-      </div>
+    <div>
+      <a class="brand" href="./" aria-label="AstroOracle">
+        <img src="assets/img/logo-lockup.png" srcset="assets/img/logo-lockup.png 1x, assets/img/logo-lockup@2x.png 2x"
+             alt="AstroOracle — Vedic astrology, English and Hindi" width="196" height="45" />
+      </a>
+      <p style="margin-top:10px;max-width:40ch;font-size:0.92rem">Vedic astrology guidance built on your own birth chart, in English and Hindi.</p>
     </div>
-    <div class="footer-bottom">
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#chart">Your chart</a></li>
+        <li><a href="#inside">Inside the app</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        <li><a href="mailto:hello@astrooracle.app">Support</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot-note">
       <span>© 2026 AstroOracle</span>
       <span>Guidance for reflection, not medical, legal or financial advice. 18+ only.</span>
     </div>
@@ -392,17 +408,22 @@
 </footer>
 
 <script>
-  // Fade sections in as they arrive; harmless if the browser lacks IntersectionObserver.
+  // Sticky nav gets its border once the page moves.
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('stuck', window.scrollY > 8);
+  onScroll();
+  addEventListener('scroll', onScroll, { passive: true });
+
+  // Sections fade in as they arrive.
   if ('IntersectionObserver' in window) {
-    const seen = new IntersectionObserver((entries) => {
+    const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          seen.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -12% 0px' });
-    document.querySelectorAll('.reveal').forEach((node) => seen.observe(node));
+    }, { rootMargin: '0px 0px -10% 0px' });
+    document.querySelectorAll('.reveal').forEach((node) => io.observe(node));
   } else {
     document.querySelectorAll('.reveal').forEach((node) => node.classList.add('in'));
   }
