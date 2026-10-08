@@ -3,240 +3,343 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AstroOracle — your chart, your question, your timing</title>
-<meta name="description" content="Ask a question and AstroOracle reads your own Kundli, the dasha you are running and today's transits to answer it — in English, Hindi or Hinglish." />
-<meta property="og:title" content="AstroOracle — your chart, your question, your timing" />
-<meta property="og:description" content="Ask a question. AstroOracle reads your Kundli and the planetary timing around it, and answers in your language." />
+<title>AstroOracle — Free Kundli, Kundli Matching and Vedic Astrology in Hindi &amp; English</title>
+<meta name="description" content="Ask your own Kundli. Free Kundli and 36-guna Kundli matching, your day every morning with Rahu Kaal, and answers that name the dasha behind them — in Hindi and English." />
+<link rel="canonical" href="https://astrooracle.in/" />
+<link rel="alternate" hreflang="en" href="https://astrooracle.in/" />
+<link rel="alternate" hreflang="hi" href="https://astrooracle.in/hi/" />
+<link rel="alternate" hreflang="x-default" href="https://astrooracle.in/" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://astrooracle.in/assets/img/icon-512.png" />
-<meta name="theme-color" content="#FBF6EC" />
+<meta property="og:url" content="https://astrooracle.in/" />
+<meta property="og:title" content="AstroOracle — ask your own Kundli" />
+<meta property="og:description" content="Free Kundli and Kundli matching, your day every morning, and answers from your own chart. Hindi and English." />
+<meta property="og:image" content="https://astrooracle.in/assets/img/og-en.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#15100A" />
 <link rel="icon" href="assets/img/favicon.png" />
 <link rel="apple-touch-icon" href="assets/img/icon-512.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Mukta:wght@400;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "AstroOracle",
+  "operatingSystem": "Android",
+  "applicationCategory": "LifestyleApplication",
+  "inLanguage": ["en", "hi"],
+  "url": "https://astrooracle.in/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.astrooracle.avokara",
+  "image": "https://astrooracle.in/assets/img/icon-512.png",
+  "description": "Vedic astrology in Hindi and English: a free Kundli, free 36-guna Kundli matching, a daily card with Rahu Kaal, and answers from your own chart.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+}
+</script>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><path d="M7 4.6v14.8a1 1 0 0 0 1.53.85l11.6-7.4a1 1 0 0 0 0-1.7L8.53 3.75A1 1 0 0 0 7 4.6z"/></symbol>
+  <symbol id="chart" viewBox="0 0 100 100"><path vector-effect="non-scaling-stroke" d="M1 1h98v98H1zM1 1l98 98M99 1L1 99M50 1l49 49-49 49L1 50z"/></symbol>
 </defs></svg>
 
-<nav class="nav" id="nav">
+<nav class="nav nav--night" id="nav" aria-label="Main">
   <div class="wrap">
-    <a href="./" aria-label="AstroOracle">
-      <img src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x" alt="AstroOracle" width="156" height="32" />
+    <a class="brand" href="./" aria-label="AstroOracle home">
+      <img class="on-day" src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x" alt="AstroOracle" width="156" height="32" />
+      <img class="on-night" src="assets/img/logo-wordmark-light.png" srcset="assets/img/logo-wordmark-light.png 1x, assets/img/logo-wordmark-light@2x.png 2x" alt="AstroOracle" width="156" height="32" />
     </a>
     <div class="nav-links">
-      <a href="#answer">The answer</a>
-      <a href="#how">How it works</a>
-      <a href="#chart">Your chart</a>
-      <a href="#app">The app</a>
+      <a href="#features">Features</a>
+      <a href="#tour">Tour</a>
+      <a href="#costs">What's free</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a class="pill pill--sm" href="#access">Get early access</a>
+    <div class="nav-actions">
+      <a class="lang hi-text" href="hi/" hreflang="hi" lang="hi">हिंदी</a>
+      <a class="store store--sm" href="https://play.google.com/store/apps/details?id=com.astrooracle.avokara"><svg aria-hidden="true"><use href="#play"/></svg><span><b>Get the app</b></span></a>
+    </div>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
-<header class="hero">
-  <div class="orbits" aria-hidden="true">
-    <svg width="900" height="900" viewBox="0 0 900 900" style="right:-220px;top:-300px">
-      <circle cx="450" cy="450" r="300"/><circle cx="450" cy="450" r="420"/>
-    </svg>
-  </div>
+<header class="hero" id="top">
+  <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
   <div class="wrap">
     <div class="hero-copy">
-      <span class="eyebrow">Vedic astrology · English &amp; हिंदी</span>
-      <h1>Your chart.<br />Your question.<br /><em>Your timing.</em></h1>
-      <p class="lede">Ask anything you'd take to a Jyotishi. AstroOracle reads your Kundli and the timing around it, then answers in the language you asked in.</p>
+      <span class="eyebrow">Vedic astrology · English &amp; <span class="hi-text">हिंदी</span></span>
+      <h1>Ask your own <em>Kundli</em>.</h1>
+      <p class="lede">Your Kundli and Kundli matching, free. Your day, every morning. And answers that name the dasha, the house and the months behind them, in Hindi or English.</p>
       <div class="hero-actions">
-        <a class="pill pill--accent" href="#access">Get early access <svg><use href="#arrow"/></svg></a>
-        <a class="textlink" href="#answer">See a real answer <svg><use href="#arrow"/></svg></a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.astrooracle.avokara"><svg aria-hidden="true"><use href="#play"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+        <a class="textlink" href="#tour"><span class="play-dot" aria-hidden="true"><svg><use href="#play"/></svg></span>Watch the 75-second tour</a>
       </div>
-      <div class="hero-meta">
-        <span><b>Free Kundli</b></span>
-        <span>·</span>
-        <span>3 free questions</span>
-        <span>·</span>
-        <span>Android, in testing</span>
-      </div>
+      <ul class="hero-meta">
+        <li><b>Free</b> Kundli</li>
+        <li><b>Free</b> Kundli matching</li>
+        <li>First <b>3 questions</b> free</li>
+        <li>Android</li>
+      </ul>
     </div>
-
     <div class="hero-stage">
-      <div class="device device--clip" style="height:520px">
-        <img src="assets/img/screen-chat.webp" width="560" height="1180" fetchpriority="high"
-             alt="An answer in AstroOracle: marriage timing explained with dasha periods, transit dates and a free remedy." />
+      <div class="phone">
+        <video id="hero-video" muted loop playsinline preload="none" poster="assets/video/hero-en.webp" width="600" height="1346"
+               aria-label="A question asked in AstroOracle and answered from the chart, ending with a takeaway.">
+          <source src="assets/video/hero-en.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="ucard ucard--a">
-        <div class="label">Current dasha</div>
-        <strong>Jupiter Mahadasha</strong>
-        <span>Feb 2018 – Feb 2034</span>
-      </div>
-      <div class="ucard ucard--b">
-        <div class="label">Next transit</div>
-        <strong>Jupiter enters Leo</strong>
-        <span>31 Oct 2026 · your 3rd house</span>
-      </div>
+      <div class="lift"><img src="assets/img/app/en/takeaway.webp" width="616" height="392" alt="The takeaway at the end of an answer: one line of guidance, a next step, and buttons to set a reminder or make it a goal." /></div>
+      <div class="chip" aria-hidden="true"><small>Running dasha</small><b>Saturn–Mercury</b><span>until May 2027</span></div>
     </div>
   </div>
 </header>
 
-<!-- ============ PROOF ============ -->
-<section class="night pad on-night" id="answer">
+<!-- ============ TOUR ============ -->
+<section class="tour" id="tour">
   <div class="wrap">
-    <div class="proof">
-      <div class="proof-shot reveal">
-        <img src="assets/img/detail-answer.webp" width="700" height="561" loading="lazy"
-             alt="Part of a real answer: Jupiter Mahadasha–Venus Antardasha, transit dates in bold, and what they support." />
-      </div>
-      <div>
-        <span class="eyebrow">A real answer</span>
-        <h2>Not "good things are coming".</h2>
-        <p class="lede" style="margin-top:var(--s-4)">This is an unedited answer from the app. Every claim in it is traceable to the chart it was read from.</p>
-        <ul class="notes">
-          <li><b>The period you are in</b><span>Jupiter Mahadasha–Venus Antardasha, named, not implied.</span></li>
-          <li><b>Dates you can plan around</b><span>31 October 2026, June 2027 to mid-2028 — from your transits.</span></li>
-          <li><b>A free remedy first</b><span>A mantra to repeat, before anything you would have to buy.</span></li>
+    <div class="section-head center">
+      <span class="eyebrow">The 75-second tour</span>
+      <h2>See the whole app before you install it.</h2>
+    </div>
+    <div class="player reveal">
+      <video controls preload="none" playsinline poster="assets/video/intro-en.webp" width="1280" height="720" aria-label="A 75-second tour of AstroOracle">
+        <source src="assets/video/intro-en.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <p class="player-note">Recorded on a phone, from a demo account. Also in <a href="hi/#tour" hreflang="hi" lang="hi" class="hi-text">हिंदी</a>.</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Inside the app</span>
+      <h2>Your chart, your day, your match. <em>One app.</em></h2>
+      <p class="lede">Every screen on this page is the real app, recorded on a phone. Nothing here is a mock-up.</p>
+    </div>
+
+    <article class="feature" id="ask">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Ask in your words</span>
+        <h2>Answers from <em>your own chart</em></h2>
+        <p class="lede">Ask about marriage, career, money, family or settling abroad, in English, Hindi or Hinglish. The answer comes back in the language you wrote in.</p>
+        <ul class="ticks">
+          <li><span><b>Reasons you can check:</b> the dasha, the houses and the planets it stands on.</span></li>
+          <li><span><b>Timing in months</b>, never a made-up exact day.</span></li>
+          <li><span><b>One clear next step</b> at the end, which becomes a reminder or a goal in a tap.</span></li>
+          <li><span>Your astrologer <b>remembers</b> the moments and goals you share.</span></li>
         </ul>
+        <div class="asks" aria-label="Questions people ask">
+          <span>When will I get married?</span>
+          <span class="hi-text" lang="hi">मेरी शादी कब होगी?</span>
+          <span>Job or business: what suits my chart?</span>
+          <span>Is there a chance I will settle abroad?</span>
+          <span class="hi-text" lang="hi">क्या मैं मांगलिक हूँ?</span>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone phone--sm phone--back"><img src="assets/img/app/hi/answer.webp" width="640" height="1437" loading="lazy" alt="The same kind of answer in Hindi, for a question about marriage." /></div>
+        <div class="phone"><img src="assets/img/app/en/answer.webp" width="640" height="1437" loading="lazy" alt="An answer to 'Job or business: what suits my chart?' naming Saturn in the 1st house, Mars in the 7th and the dates that matter." /></div>
+      </div>
+    </article>
 
-<!-- ============ HOW IT WORKS ============ -->
-<section class="pad" id="how">
-  <div class="wrap">
-    <span class="eyebrow">How it works</span>
-    <h2 style="max-width:16ch">Three steps, about a minute.</h2>
-    <div class="steps" style="margin-top:var(--s-7)">
-      <div class="step reveal">
-        <div class="step-n">01</div>
-        <h3>Give your birth details</h3>
-        <p>Date, place, time. No birth time? The reading is cast from your Moon sign and says so.</p>
-        <div class="screen screen--window" style="--crop:26%"><img src="assets/img/screen-kundli.webp" width="560" height="1180" loading="lazy" alt="The Kundli screen with the North Indian chart." /></div>
-      </div>
-      <div class="step reveal d1">
-        <div class="step-n">02</div>
-        <h3>Pick an astrologer, ask</h3>
-        <p>Six of them, each reading a different corner of life. Type in English, Hindi or Hinglish.</p>
-        <div class="screen screen--window" style="--crop:46%"><img src="assets/img/screen-ask.webp" width="560" height="1180" loading="lazy" alt="A chat ready for the first question, with suggested questions." /></div>
-      </div>
-      <div class="step reveal d2">
-        <div class="step-n">03</div>
-        <h3>Read the answer, and its reasons</h3>
-        <p>The placements it stands on, the period you are in, and the dates ahead that matter.</p>
-        <div class="screen screen--window" style="--crop:34%"><img src="assets/img/screen-chat.webp" width="560" height="1180" loading="lazy" alt="The answer with dasha periods and transit dates." /></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ YOUR CHART ============ -->
-<section class="pad" id="chart" style="background:var(--paper);border-block:1px solid var(--hair-soft)">
-  <div class="wrap">
-    <div class="bleed">
-      <div class="bleed-visual reveal">
-        <div class="screen screen--window" style="--crop:30%"><img src="assets/img/screen-dasha.webp" width="560" height="1180" loading="lazy" alt="The Kundli screen: planets with sign, degree, nakshatra, house and dignity, and the Vimshottari dasha timeline." /></div>
-      </div>
-      <div>
-        <span class="eyebrow">Your Kundli, in full</span>
-        <h2>Everything an astrologer looks up. <em style="font-style:normal;color:var(--accent)">Free, always.</em></h2>
+    <article class="feature feature--flip" id="kundli">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Your Kundli</span>
+        <h2>Everything an astrologer looks up. <em>Free, always.</em></h2>
         <ul class="spec">
           <li><b>Charts</b><span>Rasi (D1) and Navamsa (D9), drawn North or South Indian.</span></li>
-          <li><b>Placements</b><span>Sign, degree, nakshatra, house — for all nine grahas.</span></li>
+          <li><b>Placements</b><span>Sign, degree, nakshatra and house for all nine grahas.</span></li>
           <li><b>Dignity</b><span>Exalted, debilitated, combust or retrograde, marked as it falls.</span></li>
           <li><b>Dasha</b><span>Your Vimshottari periods, computed to the second.</span></li>
           <li><b>Doshas</b><span>Manglik from both Lagna and Moon, with the stones for your Lagna, 5th and 9th lords.</span></li>
         </ul>
-        <p class="tiny" style="margin-top:var(--s-4)">Sidereal, with the Lahiri ayanamsha — the zodiac Indian Jyotish is built on. Cast it once and open it as often as you like: only questions are ever counted.</p>
+        <p class="tiny" style="margin-top:var(--s-4)">Sidereal, with the Lahiri ayanamsha and whole-sign houses: the system Indian Jyotish is built on.</p>
       </div>
-    </div>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone phone--sm phone--back"><img src="assets/img/app/en/dasha.webp" width="640" height="1437" loading="lazy" alt="The Vimshottari dasha timeline and the doshas and remedies list." /></div>
+        <div class="phone"><img src="assets/img/app/en/kundli.webp" width="640" height="1437" loading="lazy" alt="The Kundli screen: a North Indian Rasi chart above the table of planets with sign, house and dignity." /></div>
+      </div>
+    </article>
+
+    <article class="feature" id="match">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Jodi Match</span>
+        <h2>Kundli matching, <em>36 gunas</em>, explained</h2>
+        <p class="lede">All eight kootas with their scores, and Nadi, Bhakoot and Manglik in plain words instead of fear.</p>
+        <ul class="ticks">
+          <li><span><b>Share a match code</b> instead of birth details. The other family sees a first name, Moon sign, nakshatra and Manglik status, never a birth date, time or place.</span></li>
+          <li><span><b>A marriage biodata PDF</b>, ready for WhatsApp, in one tap.</span></li>
+          <li><span>Free, as many times as you like.</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone"><img src="assets/img/app/en/match.webp" width="640" height="1437" loading="lazy" alt="A Kundli match: 24.5 out of 36, average match, with the eight kootas scored one by one." /></div>
+        <div class="chip" style="left:-1%;bottom:76px"><small>A match code shares</small><b>Moon sign · nakshatra · Manglik</b><span>never a birth date, time or place</span></div>
+      </div>
+    </article>
+
+    <article class="feature feature--flip" id="today">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Aaj ka Din</span>
+        <h2>Your day, <em>every morning</em></h2>
+        <p class="lede">Your personal day from your birth star (Tara Bala) and the Moon (Chandra Bala), with what to do and what to go easy on.</p>
+        <ul class="ticks">
+          <li><span><b>Rahu Kaal and Abhijit muhurat</b>, sunrise and sunset, for the city you are in.</span></li>
+          <li><span>A short note at 7:30 in the morning, if you want one. Never more than two a day.</span></li>
+          <li><span><b>Keep a streak</b> and earn free questions.</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone"><img src="assets/img/app/en/today.webp" width="640" height="1437" loading="lazy" alt="Aaj ka Din: 'A day to achieve', with what to do today, Rahu Kaal 1:50 to 3:19 PM, Abhijit muhurat, the Moon's nakshatra and a 7-day streak." /></div>
+        <div class="chip" style="right:3%;top:40%"><small>Rahu Kaal · Thu 8 Oct</small><b>1:50 – 3:19 PM</b><span>Pune</span></div>
+      </div>
+    </article>
+
+    <article class="feature" id="karma">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Karma Planner</span>
+        <h2>Plan it in your <em>best window</em></h2>
+        <p class="lede">Name a goal (an interview, a hard talk, a new habit) and get your strongest days in the next 45, each clear of Rahu Kaal and explained.</p>
+        <ul class="ticks">
+          <li><span>A reminder half an hour before the window opens, and a check-in afterwards.</span></li>
+          <li><span><b>Your Living Kundli</b>: your life drawn as dasha chapters, with the moments you pin to it.</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone phone--sm phone--back"><img src="assets/img/app/en/chapters.webp" width="640" height="1437" loading="lazy" alt="The Living Kundli: life chapters by dasha, with sub-periods and pinned moments." /></div>
+        <div class="phone"><img src="assets/img/app/en/windows.webp" width="640" height="1437" loading="lazy" alt="Your best windows: Friday 30 October, 7:33 to 9:33 AM, five stars, with the reasons it is strong." /></div>
+      </div>
+    </article>
+
+    <article class="feature feature--flip" id="upay">
+      <div class="feature-copy reveal">
+        <span class="eyebrow">Upay</span>
+        <h2>Remedies that <em>cost nothing</em></h2>
+        <p class="lede">Mantra, charity, seva and small habits chosen for the dasha you are running, kept as a 21- or 40-day practice.</p>
+        <ul class="ticks">
+          <li><span><b>A mala counter</b> that saves every 108.</span></li>
+          <li><span>Never gemstones for sale, and never sold as a cure.</span></li>
+          <li><span>Finish a practice and earn a free question.</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual reveal d1">
+        <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+        <div class="phone phone--sm phone--back"><img src="assets/img/app/en/upay.webp" width="640" height="1437" loading="lazy" alt="Upay: remedies suggested for the running Saturn Mahadasha and Mercury Antardasha." /></div>
+        <div class="phone"><img src="assets/img/app/en/mala.webp" width="640" height="1437" loading="lazy" alt="A mala counter for Om Budhaya Namah at 44 of 108." /></div>
+      </div>
+    </article>
   </div>
 </section>
 
-<!-- ============ TIMING ============ -->
-<section class="pad" id="timing">
-  <div class="wrap wrap--narrow">
-    <span class="eyebrow">Timing</span>
-    <h2>Most astrology apps tell you <em style="font-style:normal;color:var(--accent)">what</em>. This one tells you <em style="font-style:normal;color:var(--accent)">when</em>.</h2>
-    <ul class="timing-list reveal">
-      <li><b>Moon Pratyantar ends</b> <span class="house">a sub-period closes</span> <span class="when">26 Oct 2026</span></li>
-      <li><b>Jupiter enters Leo</b> <span class="house">your 3rd house</span> <span class="when">31 Oct 2026</span></li>
-      <li><b>Rahu enters Capricorn</b> <span class="house">your 8th house</span> <span class="when">5 Dec 2026</span></li>
-      <li><b>Saturn enters Aries</b> <span class="house">your 11th house</span> <span class="when">2 Jun 2027</span></li>
-    </ul>
-    <p class="tiny" style="margin-top:var(--s-4)">Real rows from the app's transit alerts, counted against one real chart. Yours will differ — that is the point.</p>
-  </div>
-</section>
-
-<!-- ============ QUESTION WALL ============ -->
-<section class="pad" id="ask" style="background:var(--paper);border-block:1px solid var(--hair-soft)">
+<!-- ============ ALSO IN THE APP ============ -->
+<section class="pad" style="background:var(--sand);border-block:1px solid var(--hair-soft)">
   <div class="wrap">
-    <div class="center" style="max-width:34ch;margin-inline:auto">
-      <span class="eyebrow">What people ask</span>
-      <h2>In your words, not ours.</h2>
+    <div class="section-head">
+      <span class="eyebrow">Also in the app</span>
+      <h2>For everyone <em>you care about</em></h2>
     </div>
-    <div class="wall reveal" style="margin-top:var(--s-6)">
-      <span class="q">When will I get married?</span>
-      <span class="q q--hi">मेरी शादी कब होगी?</span>
-      <span class="q">Job or business: what suits my chart?</span>
-      <span class="q">Is my Sade Sati running?</span>
-      <span class="q q--hi">क्या मेरी कुंडली में विदेश योग है?</span>
-      <span class="q">What will my next dasha bring?</span>
-      <span class="q">Am I Manglik, and should I worry?</span>
-      <span class="q q--hi">शनि के लिए क्या उपाय करें?</span>
-      <span class="q">Which gemstone suits me?</span>
-      <span class="q">When is a good time for children?</span>
-      <span class="q q--hi">मेरी कुंडली आसान शब्दों में समझाइए</span>
-      <span class="q">Will I do well in my exams this year?</span>
-    </div>
-    <p class="tiny center" style="margin-top:var(--s-5)">Every one of these is a starter question inside the app.</p>
-  </div>
-</section>
-
-<!-- ============ THE APP ============ -->
-<section class="night pad" id="app">
-  <div class="wrap">
-    <div style="max-width:40ch">
-      <span class="eyebrow">Inside the app</span>
-      <h2>Five screens. No mock-ups.</h2>
-      <p class="lede" style="margin-top:var(--s-4)">Home, astrologers, the answer, your Kundli, and what is coming up — exactly as they appear on a phone.</p>
-    </div>
-    <div class="strip reveal">
-      <div class="device"><img src="assets/img/screen-home.webp" width="560" height="1180" loading="lazy" alt="Home screen with free questions and astrologers." /></div>
-      <div class="device"><img src="assets/img/screen-astrologers.webp" width="560" height="1180" loading="lazy" alt="Astrologer list with subjects and languages." /></div>
-      <div class="device"><img src="assets/img/screen-chat.webp" width="560" height="1180" loading="lazy" alt="An answer in a chat." /></div>
-      <div class="device"><img src="assets/img/screen-kundli.webp" width="560" height="1180" loading="lazy" alt="The Kundli chart screen." /></div>
-      <div class="device"><img src="assets/img/screen-transits.webp" width="560" height="1180" loading="lazy" alt="Transit alerts with dates and houses." /></div>
+    <div class="more">
+      <article class="reveal">
+        <div class="window"><img src="assets/img/app/en/family.webp" width="640" height="1437" loading="lazy" alt="Family Kundli: Riya, her mother Sunita and her brother Aarav." /></div>
+        <h3>Family Kundli</h3>
+        <p>Add your family once and switch between their charts, days and matches in a tap.</p>
+      </article>
+      <article class="reveal d1">
+        <div class="window"><img src="assets/img/app/en/learn.webp" width="640" height="1437" loading="lazy" alt="Learn your chart: two-minute lessons, four of nine done." /></div>
+        <h3>Two-minute lessons</h3>
+        <p>Learn to read your own Kundli, one short lesson at a time. Free, always.</p>
+      </article>
+      <article class="reveal d2">
+        <div class="window"><img src="assets/img/app/en/cards.webp" width="640" height="1437" loading="lazy" alt="Share cards: Riya's Rashi, Gemini, The Communicator; and her 2026 in three words." /></div>
+        <h3>Share cards</h3>
+        <p>Your Rashi and your year in three words, made from your chart and sized for Stories.</p>
+      </article>
+      <article class="reveal d3">
+        <div class="window"><img src="assets/img/screen-transits.webp" width="560" height="1180" loading="lazy" alt="Transit alerts with dates and the houses they fall in." /></div>
+        <h3>Transit alerts</h3>
+        <p>When Jupiter or Saturn changes sign, the house it enters in your chart, and when your dasha turns over.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ HONESTY ============ -->
-<section class="pad" id="honest">
+<!-- ============ HONEST ============ -->
+<section class="night pad" id="honest">
   <div class="wrap">
-    <div class="honest">
-      <div class="reveal">
+    <div class="section-head">
+      <span class="eyebrow">Honest by design</span>
+      <h2>What we promise, and what we don't.</h2>
+    </div>
+    <div class="promises">
+      <article class="reveal">
         <h3>Our astrologers are AI</h3>
-        <p>Six personas, one Jyotish engine. Ask any of them directly and it will say so — and none of them invents a past, a follower count or a rating.</p>
-        <div class="faces">
-          <img src="assets/img/astrologer-meera.webp" width="42" height="42" loading="lazy" alt="" />
-          <img src="assets/img/astrologer-arjun.webp" width="42" height="42" loading="lazy" alt="" />
-          <img src="assets/img/astrologer-rudra.webp" width="42" height="42" loading="lazy" alt="" />
-          <img src="assets/img/astrologer-devraj.webp" width="42" height="42" loading="lazy" alt="" />
-          <img src="assets/img/astrologer-ananya.webp" width="42" height="42" loading="lazy" alt="" />
-          <span>Meera · Arjun · Rudra · Devraj · Ananya</span>
+        <p>Six personas reading one Jyotish engine. Ask any of them and it will say so. None invents a past, a follower count or a rating.</p>
+        <div class="faces" aria-hidden="true">
+          <img src="assets/img/astrologer-meera.webp" width="38" height="38" loading="lazy" alt="" />
+          <img src="assets/img/astrologer-arjun.webp" width="38" height="38" loading="lazy" alt="" />
+          <img src="assets/img/astrologer-rudra.webp" width="38" height="38" loading="lazy" alt="" />
+          <img src="assets/img/astrologer-devraj.webp" width="38" height="38" loading="lazy" alt="" />
+          <img src="assets/img/astrologer-ananya.webp" width="38" height="38" loading="lazy" alt="" />
         </div>
-      </div>
-      <div class="reveal d1">
-        <h3>Remedies that cost nothing first</h3>
-        <p>A mantra, a fast, an act of service. Gemstones only where the chart supports them, and never with a promise attached.</p>
-      </div>
-      <div class="reveal d2">
+      </article>
+      <article class="reveal d1">
+        <h3>Reasons, not riddles</h3>
+        <p>Every answer names the dasha and the placements it stands on, so you can check it yourself.</p>
+      </article>
+      <article class="reveal d2">
+        <h3>Months, not made-up dates</h3>
+        <p>Timing comes as months and seasons. No one can honestly promise you a day, so we don't.</p>
+      </article>
+      <article class="reveal d3">
         <h3>No fear, no fatalism</h3>
-        <p>No death predictions, no diagnosis, no pressure. A hard period is named gently, with what helps — and a bad answer can be reported in one tap.</p>
+        <p>No death or illness predictions and no pressure. A hard period is named gently, with what helps, and any answer can be reported in one tap.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COSTS ============ -->
+<section class="pad" id="costs">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">What it costs</span>
+      <h2>Most of it is free. <em>All of it is clear.</em></h2>
+    </div>
+    <div class="costs">
+      <div class="cost cost--free reveal">
+        <h3>Free, always</h3>
+        <p>No sign-up fee, no subscription, no trial that runs out.</p>
+        <ul class="ticks">
+          <li><span>Your Kundli, the dasha timeline and transit alerts</span></li>
+          <li><span>Kundli matching and the marriage biodata</span></li>
+          <li><span>Aaj ka Din, every day</span></li>
+          <li><span>Karma Planner windows and reminders</span></li>
+          <li><span>Upay practices and the mala counter</span></li>
+          <li><span>Lessons, share cards and family charts</span></li>
+        </ul>
+      </div>
+      <div class="cost reveal d1">
+        <h3>Questions</h3>
+        <p class="big">3 <small>free questions to start</small></p>
+        <ul class="ticks">
+          <li><span>After that, a question pack, paid once. <b>No subscription.</b></span></li>
+          <li><span>An answer that fails is <b>never counted</b>.</span></li>
+          <li><span>Not helpful? A thumbs-down gives the question back, up to <b>3 times a month</b>.</span></li>
+          <li><span>Earn more with streaks, finished practices and friends who join with your code.</span></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -249,11 +352,15 @@
       <h2 style="margin-bottom:var(--s-5)">Questions, answered plainly.</h2>
       <details open>
         <summary>Who writes the answers?</summary>
-        <p>AstroOracle's AI astrologers. Your chart is calculated by our own Jyotish engine; the astrologer you picked reads it and writes the answer in your language.</p>
+        <p>AstroOracle's AI astrologers. Our own Jyotish engine calculates your chart; the astrologer you pick reads it and writes the answer in your language.</p>
       </details>
       <details>
         <summary>Is it free?</summary>
-        <p>Your Kundli is, always — the charts, the placements, the dasha timeline, the doshas and your transit dates, open as often as you like. Every account also starts with three free questions. After that a question pack keeps you going — no subscription, and an answer that fails is never counted.</p>
+        <p>Your Kundli, Kundli matching, the daily card, the planner, the upay practices and the lessons are free, always. Every account also starts with three free questions; after that a question pack keeps you going. There is no subscription, and an answer that fails is never counted.</p>
+      </details>
+      <details>
+        <summary>Can I use it in Hindi?</summary>
+        <p>Yes. Every screen is in English and Hindi, and you can switch at any time. Ask in English, Hindi or Hinglish and the answer comes back in the language you wrote in.</p>
       </details>
       <details>
         <summary>I don't know my exact birth time.</summary>
@@ -264,26 +371,31 @@
         <p>Vedic (Jyotish): the sidereal zodiac with the Lahiri ayanamsha, whole-sign houses, Vimshottari dasha, D9 and D10 divisional charts, and real daily transits.</p>
       </details>
       <details>
+        <summary>What does a match code share?</summary>
+        <p>A first name, Moon sign, nakshatra (with its pada) and Manglik status. Never a birth date, time or place.</p>
+      </details>
+      <details>
         <summary>What happens to my birth details?</summary>
-        <p>They are used to calculate your chart and answer your questions, and nothing else — no selling, no advertising. See the <a href="privacy.html">privacy policy</a>.</p>
+        <p>They are used to calculate your chart and answer your questions, and nothing else: no selling, no advertising. See the <a href="privacy.html">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>Is there an iPhone app?</summary>
+        <p>Not yet. AstroOracle is on Android, from Google Play.</p>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
-<section class="pad-sm" id="access">
+<!-- ============ FINALE ============ -->
+<section class="pad-sm" id="get">
   <div class="wrap">
     <div class="finale reveal">
-      <div class="orbits" aria-hidden="true">
-        <svg width="900" height="900" viewBox="0 0 900 900" style="left:50%;top:-460px;transform:translateX(-50%)">
-          <circle cx="450" cy="450" r="300"/><circle cx="450" cy="450" r="430"/>
-        </svg>
-      </div>
-      <img class="emblem" src="assets/img/emblem.webp" width="56" height="56" loading="lazy" alt="" />
-      <h2>Be among the first to ask.</h2>
-      <p>The Android app is in testing. Write to us and we'll send the link the day it opens — your Kundli free, and three questions to start with.</p>
-      <a class="pill pill--light" href="mailto:hello@astrooracle.in?subject=AstroOracle%20early%20access">Get early access <svg><use href="#arrow"/></svg></a>
+      <div class="motif" aria-hidden="true"><svg><use href="#chart"/></svg></div>
+      <img class="emblem" src="assets/img/emblem.webp" width="64" height="64" loading="lazy" alt="" />
+      <h2>Ask your own <em>Kundli</em>.</h2>
+      <p>Free on Google Play. Your Kundli and Kundli matching cost nothing, and your first three questions are on us.</p>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.astrooracle.avokara"><svg aria-hidden="true"><use href="#play"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+      <p class="tiny">Android · English &amp; <span class="hi-text">हिंदी</span> · 18+</p>
     </div>
   </div>
 </section>
@@ -291,39 +403,21 @@
 <footer class="foot">
   <div class="wrap">
     <div class="foot-row">
-      <a href="./" aria-label="AstroOracle"><img src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x" alt="AstroOracle" width="136" height="28" /></a>
-      <nav>
-        <a href="#how">How it works</a>
-        <a href="#app">The app</a>
+      <a href="./" aria-label="AstroOracle home"><img src="assets/img/logo-wordmark.png" srcset="assets/img/logo-wordmark.png 1x, assets/img/logo-wordmark@2x.png 2x" alt="AstroOracle" width="136" height="28" /></a>
+      <nav aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#costs">What's free</a>
         <a href="#faq">FAQ</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a class="hi-text" href="hi/" hreflang="hi" lang="hi">हिंदी</a>
       </nav>
-      <a class="pill pill--quiet pill--sm" href="#access">Get early access</a>
+      <a class="store store--sm" href="https://play.google.com/store/apps/details?id=com.astrooracle.avokara"><svg aria-hidden="true"><use href="#play"/></svg><span><b>Get the app</b></span></a>
     </div>
     <p class="tiny">© 2026 AstroOracle · Guidance for reflection, not medical, legal or financial advice. 18+ only. Made in India.</p>
   </div>
 </footer>
 
-<script>
-  const nav = document.getElementById('nav');
-  const onScroll = () => nav.classList.toggle('stuck', window.scrollY > 8);
-  onScroll();
-  addEventListener('scroll', onScroll, { passive: true });
-
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -8% 0px' });
-    document.querySelectorAll('.reveal').forEach((n) => io.observe(n));
-  } else {
-    document.querySelectorAll('.reveal').forEach((n) => n.classList.add('in'));
-  }
-</script>
-
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
