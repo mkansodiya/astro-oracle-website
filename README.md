@@ -29,6 +29,11 @@ loops, posters and preview images are generated from the recordings in the app r
 `python marketing/video/web_assets.py`. Every store button links to
 `https://play.google.com/store/apps/details?id=com.astrooracle.avokara`.
 
+After editing `assets/css/styles.css` or `assets/js/site.js`, run `python tools/version-assets.py`
+before you push. It stamps every page's link with a hash of the file (`styles.css?v=…`): GitHub
+Pages lets browsers keep CSS and JS for four hours but HTML for only ten minutes, so without a new
+stamp visitors can get the new page with the old stylesheet.
+
 Before launch, search the HTML for `TODO` and fill in the legal entity name, registered address
 and grievance contact. Then have a lawyer read the privacy policy and terms.
 
