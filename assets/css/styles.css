@@ -265,7 +265,19 @@ html[lang="hi"] .chip small { font-size: 0.78rem; letter-spacing: 0; text-transf
   max-width: 980px; margin-inline: auto; border-radius: var(--r-2); overflow: hidden; background: #000;
   box-shadow: 0 0 0 1.5px rgba(240, 169, 74, 0.45), 0 50px 90px -40px rgba(0, 0, 0, 0.9);
 }
-.player video { width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.player video, .player iframe { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; border: 0; }
+/* The tour: our own poster until it is played, then YouTube's player in its place. */
+.yt { position: relative; display: block; aspect-ratio: 16 / 9; background: #000; }
+.yt img { width: 100%; height: 100%; object-fit: cover; opacity: 0.92; transition: opacity 0.2s ease; }
+.yt-play {
+  position: absolute; inset: 0; margin: auto; width: 92px; height: 92px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--gold);
+  box-shadow: 0 0 0 10px rgba(240, 169, 74, 0.22), 0 18px 40px -12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.yt-play svg { width: 34px; height: 34px; fill: var(--ink); margin-left: 6px; }
+.yt:hover img, .yt:focus-visible img { opacity: 1; }
+.yt:hover .yt-play, .yt:focus-visible .yt-play { transform: scale(1.06); box-shadow: 0 0 0 14px rgba(240, 169, 74, 0.26), 0 18px 40px -12px rgba(0, 0, 0, 0.7); }
 .player-note { margin-top: var(--s-4); text-align: center; font-size: 0.86rem; color: var(--night-dim); }
 
 /* ---------- features ---------- */
