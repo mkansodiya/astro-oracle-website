@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>You're invited · AstroOracle</title>
+<meta name="description" content="Join AstroOracle with a friend's code: free Kundli, and a free question for both of you." />
+<meta property="og:title" content="You're invited to AstroOracle" />
+<meta property="og:description" content="Free Kundli, daily guidance in English and Hindi, and a free question for you and your friend." />
+<meta property="og:image" content="https://astrooracle.in/assets/img/icon-512.png" />
+<meta name="theme-color" content="#FBF6EC" />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="../assets/img/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/styles.css" />
+<style>
+  .landing { min-height: 100vh; display: grid; place-items: center; padding: 32px 18px; }
+  .landing-card { max-width: 440px; width: 100%; text-align: center; display: grid; gap: 18px; }
+  .landing-card h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(30px, 7vw, 40px); line-height: 1.1; margin: 0; }
+  .landing-card p { margin: 0; color: #5c5148; line-height: 1.55; }
+  .hi { font-size: 15px; }
+  .code { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: .18em; border: 2px dashed #f0a94a; border-radius: 16px; padding: 12px 18px; justify-self: center; }
+  .actions { display: grid; gap: 10px; }
+  .actions a { justify-content: center; }
+  .meta { font-size: 13px; color: #7a6e64; }
+</style>
+</head>
+<body>
+<main class="landing">
+  <div class="landing-card">
+    <a href="../" aria-label="AstroOracle"><img src="../assets/img/logo-lockup.png" srcset="../assets/img/logo-lockup.png 1x, ../assets/img/logo-lockup@2x.png 2x" alt="AstroOracle" height="44" /></a>
+    <h1>You're invited</h1>
+    <p>Join with your friend's code and you <b>both</b> get a free question, after your first answer. Your Kundli is free, always.</p>
+    <p class="hi">दोस्त के कोड से जुड़िए — पहले जवाब के बाद आप <b>दोनों</b> को एक मुफ़्त सवाल। आपकी कुंडली हमेशा मुफ़्त।</p>
+    <div class="code" id="code">······</div>
+    <div class="actions">
+      <a class="pill pill--accent" id="open" href="#">Open in the app · ऐप में खोलें</a>
+      <a class="pill" id="play" href="#">Get it on Google Play</a>
+    </div>
+    <p class="meta">Free Kundli · 3 free questions · English &amp; हिंदी · Android</p>
+  </div>
+</main>
+<script>
+  (function () {
+    var raw = new URLSearchParams(location.search).get('c') || '';
+    var code = /^[A-Za-z0-9]{4,12}$/.test(raw) ? raw.toUpperCase() : '';
+    var play = 'https://play.google.com/store/apps/details?id=com.astrooracle.avokara';
+    document.getElementById('code').textContent = code || '—';
+    document.getElementById('open').href = code ? 'astrooracle://invite?c=' + code : 'astrooracle://';
+    document.getElementById('play').href = code ? play + '&referrer=' + encodeURIComponent('invite=' + code) : play;
+  })();
+</script>
+</body>
+</html>
